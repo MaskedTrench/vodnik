@@ -20,6 +20,12 @@ a, p {
 	margin: 0px;
 }
 
+footer {
+	background-color: #EBEDEE;
+	padding: 60px 0;
+	padding-bottom: 5px;
+}
+
 .trades--list{
 	padding-left: 20px;
 	font-family: 'Jost';
@@ -56,10 +62,12 @@ h4 {
 }
 
 section {
+	padding: 0 20px;
 	margin-bottom: 220px;
 }
 
 nav {
+	padding: 0px 20px;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -95,6 +103,10 @@ nav {
 .hero--bg {
 	position: absolute;
 	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
@@ -235,4 +247,145 @@ nav {
 	padding: 10px;
 	border-radius: 5px;
 	box-shadow: 0px 0px 10px #00000025;
+}
+
+
+.testimonial--grid-wrap {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	row-gap: 20px;
+	column-gap: 20px;
+}
+
+.testimonial--cell-wrap {
+	padding: 10px 5px;
+	background-color: white;
+	box-shadow: 0px 0px 10px #00000025;
+	border-radius: 5px;
+}
+
+.testimonial--header {
+	display: flex;
+	margin-bottom: 10px;
+}
+
+.testimonial--avatar-img {
+	height: 40px;
+	width: 40px;
+	overflow: hidden;
+	border-radius: 100%;
+	margin-right: 20px;
+}
+
+.testimonial--head {
+	font-size: 30px;
+	margin: 0;
+}
+
+.testimonial--date {
+	font-size: 18px;
+	color: #555;
+	margin: 0;
+}
+
+.testimonial--mark {
+	height: 24px;
+	margin-bottom: 15px;
+}
+
+.testimonial--comment {
+	margin: 0;
+	font-size: 18px;
+}
+
+.dropbox--wrap {
+	background-color: #F5F5F5;
+	border-radius: 5px;
+	margin: 5px;
+}
+
+.dropbox--wrap p {
+	margin: 0;
+}
+
+.dropbox--head {
+	padding: 25px 30px;
+}
+
+.dropbox--cont {
+	padding: 0 30px;
+	padding-bottom: 5px;
+}
+
+.dropbox--cont p {
+	font-size: 16px;
+}
+
+.hidden {
+	display: none;
+}
+
+.contacts--wrap {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.block {
+	width: 45%;
+}
+
+.contacts--links {
+	color: #00CCCC;
+	display: block;
+	font-size: 22px;
+	margin-bottom: 10px;
+}
+
+.contacts--wrap a {
+	margin-right: 5px;
+	text-decoration: none;
+	transition: 100ms ease-in-out;
+}
+
+.contacts--wrap a:hover {
+	opacity: 50%;
+}
+
+footer .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer--links {
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+.footer--links-wrap {
+	margin-right: 20px;
+}
+
+.footer--links a {
+	display: block;
+	margin-bottom: 10px;
+	color: #000;
+	text-decoration: none;
+	transition: 200ms ease-in-out;
+}
+
+.footer--links h3 {
+	margin-bottom: 25px;
+}
+
+.footer--links a:hover {
+	opacity: 50%;
+}
+
+.copyright {
+	font-size: 14px;
+	display: block;
+	text-align: center;
+	margin-top: 70px;
 }
