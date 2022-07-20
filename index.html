@@ -182,7 +182,85 @@
 	<section>
 		<div class="container">
 			<h2>Отзывы</h2>
-			<div class="testimonial--grid-wrap">
+			<div class="testimonial--selector-wrap">
+				<p id="yandex-sel" class="selected" onclick="toYandex()">Яндекс</p>
+				<p id="2gis-sel" onclick="toYandex()">2Гис</p>
+			</div>
+			<div class="testimonial--grid-wrap" id="yandex-testim">
+				<div class="testimonial--cell-wrap">
+					<div class="testimonial--header">
+						<img src="./src/img/noneAvatar.png" alt="" class="testimonial--avatar-img">
+						<div>
+							<h3 class="testimonial--head">Магарита Ц.</h3>
+							<p class="testimonial--date">18 июня</p>
+						</div>
+					</div>
+					<img src="./src/ico/stars.svg" alt="" class="testimonial--mark">
+					<p class="testimonial--comment">
+						Были сегодня здесь с семьей, плавали на трехместном каяке. Впечатления только положительные! Отдельное спасибо потрясающему персоналу. Обязательно вернемся снова, будем пробовать все виды водного транспорта))					</p>
+				</div>
+				<div class="testimonial--cell-wrap">
+					<div class="testimonial--header">
+						<img src="./src/img/noneAvatar.png" alt="" class="testimonial--avatar-img">
+						<div>
+							<h3 class="testimonial--head">Маргарита Ц.</h3>
+							<p class="testimonial--date">18 июня</p>
+						</div>
+					</div>
+					<img src="./src/ico/stars.svg" alt="" class="testimonial--mark">
+					<p class="testimonial--comment">
+						Были сегодня здесь с семьей, плавали на трехместном каяке. Впечатления только положительные! Отдельное спасибо потрясающему персоналу. Обязательно вернемся снова, будем пробовать все виды водного транспорта))					</p>
+				</div>
+				<div class="testimonial--cell-wrap">
+					<div class="testimonial--header">
+						<img src="./src/img/noneAvatar.png" alt="" class="testimonial--avatar-img">
+						<div>
+							<h3 class="testimonial--head">Маргарита Ц.</h3>
+							<p class="testimonial--date">18 июня</p>
+						</div>
+					</div>
+					<img src="./src/ico/stars.svg" alt="" class="testimonial--mark">
+					<p class="testimonial--comment">
+						Были сегодня здесь с семьей, плавали на трехместном каяке. Впечатления только положительные! Отдельное спасибо потрясающему персоналу. Обязательно вернемся снова, будем пробовать все виды водного транспорта))					</p>
+				</div>
+				<div class="testimonial--cell-wrap">
+					<div class="testimonial--header">
+						<img src="./src/img/noneAvatar.png" alt="" class="testimonial--avatar-img">
+						<div>
+							<h3 class="testimonial--head">Маргарита Ц.</h3>
+							<p class="testimonial--date">18 июня</p>
+						</div>
+					</div>
+					<img src="./src/ico/stars.svg" alt="" class="testimonial--mark">
+					<p class="testimonial--comment">
+						Были сегодня здесь с семьей, плавали на трехместном каяке. Впечатления только положительные! Отдельное спасибо потрясающему персоналу. Обязательно вернемся снова, будем пробовать все виды водного транспорта))					</p>
+				</div>
+				<div class="testimonial--cell-wrap">
+					<div class="testimonial--header">
+						<img src="./src/img/noneAvatar.png" alt="" class="testimonial--avatar-img">
+						<div>
+							<h3 class="testimonial--head">Маргарита Ц.</h3>
+							<p class="testimonial--date">18 июня</p>
+						</div>
+					</div>
+					<img src="./src/ico/stars.svg" alt="" class="testimonial--mark">
+					<p class="testimonial--comment">
+						Были сегодня здесь с семьей, плавали на трехместном каяке. Впечатления только положительные! Отдельное спасибо потрясающему персоналу. Обязательно вернемся снова, будем пробовать все виды водного транспорта))					</p>
+				</div>
+				<div class="testimonial--cell-wrap">
+					<div class="testimonial--header">
+						<img src="./src/img/noneAvatar.png" alt="" class="testimonial--avatar-img">
+						<div>
+							<h3 class="testimonial--head">Маргарита Ц.</h3>
+							<p class="testimonial--date">18 июня</p>
+						</div>
+					</div>
+					<img src="./src/ico/stars.svg" alt="" class="testimonial--mark">
+					<p class="testimonial--comment">
+						Были сегодня здесь с семьей, плавали на трехместном каяке. Впечатления только положительные! Отдельное спасибо потрясающему персоналу. Обязательно вернемся снова, будем пробовать все виды водного транспорта))					</p>
+				</div>
+			</div>
+			<div class="testimonial--grid-wrap hidden" id="2gis-testim">
 				<div class="testimonial--cell-wrap">
 					<div class="testimonial--header">
 						<img src="./src/img/noneAvatar.png" alt="" class="testimonial--avatar-img">
@@ -339,7 +417,17 @@
 	<script>
 	function dropopen() {
 		document.getElementById("dropbox")
-			.classList.toggle("hidden")
+			.classList.toggle("hidden");
+	}
+	function toYandex() {
+		document.getElementById("2gis-sel")
+			.classList.toggle("selected");
+		document.getElementById("yandex-sel")
+			.classList.toggle("selected");
+		document.getElementById("yandex-testim")
+			.classList.toggle("hidden");
+		document.getElementById("2gis-testim")
+			.classList.toggle("hidden");
 	}
 	</script>
 	<link async rel="stylesheet" href="src/style.css">
